@@ -1,0 +1,662 @@
+:root{
+    ---primary-color:#3936c4;
+    ---secondary-color:#21202a;
+
+    --p-text: #6b6d78;
+    --h-text:#21202a;
+    --star:#ff8100;
+
+    --h1-font-size:70px;
+    --h3-font-size: 32px;
+    --h2-font-size:42px;
+    --h4-font-size:24px;
+    --p-font-size:18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: all 0.2s ease-in;
+}
+html{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+body{
+    max-width: 100%;
+    height: auto;
+    font-family: "Poppins", sans-serif;
+    background-color:#fffcf5;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2% 8%;
+}
+section{
+    
+}
+/* custom Css  */
+
+/* ---------------header start here -------------  */
+header{
+    padding: 5px 0;
+   
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#fffcf5;
+    width: 100%;
+    height: auto;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-left: 100px;
+}
+nav ul li a{
+    text-transform: capitalize;
+    font-size:18px;
+    font-weight: 400;
+    color: var(--p-text);
+    cursor: pointer;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    transform: scale(1.05);
+    display: inline-block;
+
+}
+a.active{
+    color: #3936c4;
+    font-weight: 600;
+}
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+}
+.btn:nth-child(2){
+    border: 1px solid rgb(228, 225, 225);
+    border-radius: 5px;   
+}
+.btn-group a{
+    color: var(--h-text);
+}
+.btn{
+    padding: 18px 35px;
+    font-weight: 600; 
+    cursor: pointer;
+    transition: 0.2s;
+     
+}
+.btn:hover{
+    transform: scale(1.05);
+
+}
+/* ---------------header end here -------------  */
+/* ---------------hero section start here -------------  */
+.hero{
+    margin-top: 100px;
+}
+.hero-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 auto;
+}
+.left-content, 
+.right-content{
+    width: 50%;
+}
+.left-content h1{
+    font-size: var(--h1-font-size);
+    color: var(--h-text);
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: left;
+}
+.left-content p{
+    font-size: var(--p-font-size);
+    color: var(--p-text);
+    max-width: 520px;
+    text-align: left;
+    margin: 30px 0;
+
+}
+.left-content a{
+    background-color: var(---primary-color);
+    color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* ---------------hero section end here -------------  */
+/* ---------------group section start here -------------  */
+.associate{
+    text-align: center;
+    margin: 10% 15%;
+}
+.associate > h3{
+    font-size: var(--h3-font-size);
+    color: var(---secondary-color);
+    margin: 20px 0;
+    font-weight: 700;
+}
+.group{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    justify-content: space-between;
+    gap: 20px;
+}
+/* ---------------group section end here -------------  */
+
+/* ---------------work section start here -------------  */
+.work{
+    margin: 5% auto;
+}
+.work > h2{
+    font-size: var(--h2-font-size);
+    font-weight: 600;
+    color: var(--h-text);
+    margin: 20px 0;
+    text-align: center;
+}
+.work > p{
+    font-size: 16px;
+    font-weight: 400;
+    column-gap: var(--p-text);
+    width: 450px;
+    margin:  0 auto;
+    opacity: 0.7;
+    text-align: center;
+    
+}
+.work-grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+    margin: 80px 0;
+}
+.work-card{
+    border: 1px solid rgba(116, 119, 116, 0.144);
+    border-radius: 10px;
+    padding: 30px ;
+    margin: 0 10px;
+    text-align: left;
+}
+.work-card > img{
+    margin: 25px 0;
+    max-width: 100%;
+}
+.work-card > h4{
+    font-size: var(--h4-font-size);
+    color: var(--h-text);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.work-card > p{
+    font-size:16px;
+    font-weight: 400;
+    color: var(--p-text);
+    margin-bottom: 20px;
+   
+}
+.work-card > a{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(---secondary-color);
+    margin-bottom: 20px;
+}
+
+
+/* ---------------work section end here -------------  */
+
+/* ---------------hero2 section start here -------------  */
+.left-content > h2{
+    font-size: var(--h2-font-size);
+    max-width: 500px;
+    font-weight: 600;
+    line-height: 50px;
+    color: var(--h-text);
+    
+}
+.list > p{
+    margin: 15px 0;
+    color: #000;
+    font-weight: 500;
+}
+.fa-solid{
+    color: var(---primary-color);
+    padding-right: 10px;
+    font-size: 22px;
+    opacity: 0.9;
+    
+}
+.hero2  a{
+    margin: 28px 0;
+    display: inline-block;
+}
+
+/* ---------------hero2 section end here -------------  */
+
+/* ---------------feature section start here -------------  */
+.feature {
+    margin: 5% 0;
+    text-align: center; 
+}
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 15px;
+    margin: 60px 0;
+     
+}
+.feature > h2{
+    font-size: var(--h2-font-size);
+    font-weight: 600;
+    color: var(---secondary-color);
+    margin: 20px 0;
+}
+.feature > p{
+    font-size: var(--p-font-size);
+    color: var(--p-text);
+    max-width: 520px;
+    margin: 0 auto;
+}
+.feature-card{
+    border: 1px solid rgba(116, 119, 116, 0.144);
+    border-radius: 10px;
+    padding: 30px 25px ;
+    margin: 0 10px;
+    text-align: left;
+    background-color: #fff;
+}
+.feature-card > h4{
+    font-size: var(--h4-font-size);
+    color: var(--h-text);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.feature-card .card-location{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.card-location > p > i{
+    color:#000;
+}
+.card-location Span{
+    color: var(--p-text);
+    font-size: 18px;
+    margin-left: -8px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.card-location #fe-btn{
+    font-size: var(--p-font-size);
+    font-weight: 500;
+    color: var(--star);
+    background-color: #fff8f0;
+    padding: 10px;
+    margin-top: -10px;
+}
+.card-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.card-main img{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.card-main .h5-head{
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+}
+.h5-head > h5{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.h5-head > p{
+    color: var(--p-text);
+}
+ #a-btn{
+    text-transform: capitalize;
+    font-size: var(--p-font-size);
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 10px;
+}
+.feature-card, .work-card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+#feature > a{
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+/* ---------------feature section end here -------------  */
+
+/* ---------------client section start here -------------  */
+.client{
+    padding:  5% 0;
+}
+.client-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0;
+}
+.client-head > h2{
+    font-size: var(--h2-font-size);
+    color: var(--h-text);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.client-head > p{
+    max-width: 520px;
+    font-size: var(--p-font-size);
+    color: var(--p-text);
+    font-weight: 400;
+    list-style: 25px;
+}
+.client-heading a{
+    background-color: var(---primary-color);
+    color: #fff;
+    text-transform: capitalize;
+    display: inline-block;
+
+}
+.client-grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+    margin: 80px 0;
+}
+.client-card{
+    border: 1px solid rgba(116, 119, 116, 0.144);
+    border-radius: 10px;
+    padding: 30px ;
+    margin: 0 10px;
+    text-align: left;
+}
+.client-card .star{
+    margin: 30px 0;
+}
+.star i{
+    color: var(--star);
+    font-size: 18px;
+    margin-left: -6px;
+    font-weight: 600;
+
+}
+.client-card em{
+    font-weight: 400;
+    color: var(--p-text);
+    line-height: 30px; 
+}
+.client-card > h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+.client-card > p{
+    font-size: 16px;
+    color: var(--p-text);
+    font-weight: 400;
+}
+
+.client-card img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+/* ---------------client section end here -------------  */
+/* ---------------hero3 section start here -------------  */
+.hero3{
+    margin: 4% 0;
+}
+.hero3 .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#3936c4;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 45vh;
+    border-radius: 15px;
+    padding: 0 60px;
+    margin-bottom: 60px;
+}
+.box > h2{
+    font-size: var(--h2-font-size);
+    color: #fff;
+    font-weight: 600;
+    width: 600px;
+}
+.box a{
+    background-color: #fff;
+    color:#3936c4 ;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+/* ---------------hero3 section end here -------------  */
+
+footer{
+   background-image: url(image/BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    margin: 0 auto;  
+}
+.foot{
+    max-width: 100%;
+    margin: 0 auto;   
+}
+hr{
+    max-width: 84%;
+    margin:  0 auto;
+    border: 2px solid var(--p-text);
+}
+
+.footer-top{
+    padding-top: 13% ; 
+    margin: 20px 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.footer-left > h2{
+    width: 500px;
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: #fff;
+}
+.footer-left a{
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.footer-right a{
+    background-color:#3936c4;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: var(--p-font-size);
+    font-weight: 500;
+}
+.btn i{
+    color: #fff;
+    font-size: 20px;
+}
+.footer-menu{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 0 8%;
+   max-width: 100%;
+   margin: 0 auto;
+}
+.footer-menu a{
+    margin-top: 40px;
+    padding-left: 30px;
+    text-transform: capitalize;
+    color: #ffffffc9;
+    font-size: var(--p-font-size);
+}
+
+
+/* Responsive section is start here  */
+@media(max-width:1400px){
+
+    .head{
+       padding: 2% 4%;
+    
+    }
+    .card-main .h5-head{
+      
+        margin-left: -10px;
+    }
+}
+@media(max-width:1280px){
+    :root{
+        --h1-font-size:60px;
+        --h3-font-size: 26px;
+        --h2-font-size:35px;
+        --h4-font-size:20px;
+        --p-font-size:16px;
+    }
+    .container{
+        padding: 2% 6%;
+    }
+    .feature-grid{
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 10px;    
+    }
+    footer{
+        height: 40vh;
+    }
+    .foot{
+        padding-top: 80px;
+    }
+}
+@media(max-width:980px){
+    .head{
+        padding: 3% 6%;
+     }
+     .container{
+        padding: 3% ;
+     }
+     nav{
+        display: none;
+     }
+     .left-content h1{
+        line-height: 60px;
+     }
+     .btn{
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+     .work-grid, 
+     .feature-grid, 
+     .client-grid{ 
+        grid-template-columns: repeat(1 , 1fr);
+       
+    }
+    .hero3 .box{
+        flex-direction: column;
+        height: 30vh;
+        padding: 5% 0;
+        text-align: center;
+    }
+    .footer-top{
+      flex-direction: column;
+      text-align: center;
+    }
+    .foot{
+        padding-top: 100px;
+    }
+    .footer-right a{
+       margin-top: 10px;
+       display: inline-block;
+    }
+    .footer-menu{
+        justify-content: space-evenly;
+
+    }
+}
+@media(max-width:680px){
+    :root{
+        --h1-font-size:40px;
+        --h3-font-size: 20px;
+        --h2-font-size:30px;
+        --h4-font-size:18px;
+        --p-font-size:14px;
+    }
+    .hero-flex{
+        flex-direction: column;
+    }
+    .left-content, 
+    .right-content{
+        width: 100%;
+    }
+    body{
+        text-align: center;
+    }
+    .client-heading{
+        flex-direction: column;
+    }
+    .client-heading a{
+        margin-top: 20px;
+    }
+
+}
+@media(max-width:500px){
+    body{
+        max-width: 98%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
